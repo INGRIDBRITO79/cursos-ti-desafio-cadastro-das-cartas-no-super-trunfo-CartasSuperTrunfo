@@ -17,7 +17,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-   
+    
     printf("Carta 1\n");
 
     char estado1 [50];
@@ -27,6 +27,8 @@ int main() {
     float area1;
     float PIB1;
     int turisticos1; 
+    float densidade1;
+    float PIBpercapita1;
 
     printf("Digite o nome do estado - uma letra de 'A' a 'H':");
     scanf("%s", estado1);
@@ -49,7 +51,8 @@ int main() {
     printf("Digite o número de pontos turisticos da cidade:");
     scanf("%d", &turisticos1);
 
-    
+    densidade1 = (float) populacao1 / area1;
+    PIBpercapita1 = PIB1 / populacao1;  
 
     printf("Carta 2\n");
 
@@ -60,6 +63,8 @@ int main() {
     float area2;
     float PIB2;
     int turisticos2; 
+    float densidade2;
+    float PIBpercapita2;
 
     printf("Digite o nome do estado - uma letra de 'A' a 'H':");
     scanf("%s", estado2);
@@ -82,7 +87,8 @@ int main() {
     printf("Digite o número de pontos turisticos da cidade:");
     scanf("%d", &turisticos2);
     
-    
+    densidade2 = (float) populacao2 / area2;
+    PIBpercapita2 = PIB2 / populacao2;      
 
     printf("Carta 1\n");
     printf("Estado: %s\n", estado1);
@@ -92,7 +98,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Número de pontos turisticos: %d\n",turisticos1);
-
+    printf("Densidade demográfica: %.2f habitantes/km²\n", densidade1);
+    printf("PIB per capita: %.2f mil reais\n", PIBpercapita1);
    
     printf("Carta 2\n");
     printf("Estado: %s\n", estado2);
@@ -102,7 +109,9 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", PIB2);
     printf("Número de pontos turisticos: %d\n",turisticos2);
-
+    printf("Densidade demográfica: %.2f habitantes/km²\n", densidade2);
+    printf("PIB per capita: %.2f mil reais\n", PIBpercapita2);
+     
    
     return 0;
 }
