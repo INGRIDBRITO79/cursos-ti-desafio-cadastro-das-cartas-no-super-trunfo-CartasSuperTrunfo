@@ -124,8 +124,17 @@ int main() {
     printf("PIB per capita: %.2f mil reais\n", PIBpercapita2);
     printf("Superpoder: %.2f\n", Superpoder2);
 
-    //Comparação das cartas 1 e 2
+    ////Comparação das cartas 1 e 2
 
+    printf("Comparando as cartas:\n");
+    
+    printf("populacao1 > populacao2: %lu\n", populacao1 > populacao2);
+    printf("area1 > area2: %.2f\n", area1 > area2);
+    printf("PIB1 > PIB2: %.2f\n", PIB1 > PIB2); 
+    printf("turisticos1 > turisticos2: %d\n", turisticos1 > turisticos2);
+    printf("densidade1 > densidade2: %.2f\n", densidade1 > densidade2);
+    printf("PIBpercapita1 > PIBpercapita2: %.2f\n", PIBpercapita1 > PIBpercapita2);
+    printf("Superpoder1 > Superpoder2: %.2f\n", Superpoder1 > Superpoder2);
     
    
     return 0;
