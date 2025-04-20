@@ -29,7 +29,9 @@ int main() {
     int turisticos1; 
     float densidade1;
     float PIBpercapita1;
+    float Superpoder1;
 
+    
     printf("Digite o nome do estado - uma letra de 'A' a 'H':");
     scanf("%s", estado1);
 
@@ -53,6 +55,8 @@ int main() {
 
     densidade1 = (float) populacao1 / area1;
     PIBpercapita1 = PIB1 / populacao1;  
+    Superpoder1 = (float) populacao1 + area1 + PIB1 + turisticos1 + (1/densidade1) + PIBpercapita1;
+
 
     printf("Carta 2\n");
 
@@ -65,6 +69,9 @@ int main() {
     int turisticos2; 
     float densidade2;
     float PIBpercapita2;
+    float Superpoder2;
+
+
 
     printf("Digite o nome do estado - uma letra de 'A' a 'H':");
     scanf("%s", estado2);
@@ -89,6 +96,8 @@ int main() {
     
     densidade2 = (float) populacao2 / area2;
     PIBpercapita2 = PIB2 / populacao2;      
+    Superpoder2 = (float) populacao2 + area2 + PIB2 + turisticos2 + (1/densidade2) + PIBpercapita2;
+
 
     printf("Carta 1\n");
     printf("Estado: %s\n", estado1);
@@ -100,7 +109,9 @@ int main() {
     printf("Número de pontos turisticos: %d\n",turisticos1);
     printf("Densidade demográfica: %.2f habitantes/km²\n", densidade1);
     printf("PIB per capita: %.2f mil reais\n", PIBpercapita1);
-   
+    printf("Superpoder: %.2f\n", Superpoder1);
+
+
     printf("Carta 2\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -111,7 +122,11 @@ int main() {
     printf("Número de pontos turisticos: %d\n",turisticos2);
     printf("Densidade demográfica: %.2f habitantes/km²\n", densidade2);
     printf("PIB per capita: %.2f mil reais\n", PIBpercapita2);
-     
+    printf("Superpoder: %.2f\n", Superpoder2);
+
+    //Comparação das cartas 1 e 2
+
+    
    
     return 0;
 }
